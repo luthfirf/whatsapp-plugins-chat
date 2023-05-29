@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Widget</title>
+    <!--JQuery-->
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <!--Floating WhatsApp css-->
+    <link rel="stylesheet" href="floating-wpp.min.css">
+    <!--Floating WhatsApp javascript-->
+    <script type="text/javascript" src="floating-wpp.min.js"></script>
+</head>
+
+<body>
+    <!--Div where the WhatsApp will be rendered-->
+    <div id="WAButton"></div>
+</body>
+
+<script type="text/javascript">
+    $(function() {
+        $('#WAButton').floatingWhatsApp({
+            phone: '6285232294273', //WhatsApp Business phone number
+            headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+            popupMessage: 'Hello, how can we help you?', //Popup Message
+            showPopup: true, //Enables popup display
+            buttonImage: '<img src="iconwhatsapp.svg" />', //Button Image
+            //headerColor: 'crimson', //Custom header color
+            //backgroundColor: 'crimson', //Custom background button color
+            position: "right" //Position: left | right
+
+        });
+    });
+</script>
+
+</html>
